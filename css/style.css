@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root {
+    --white: #f7f7f7;
+    --black: #121212;
+    --pink: #ff2e63;
+    --black-layer: rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", serif;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    padding: 1.2rem 4rem;
+
+}
+
+nav .logo {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.container {
+    padding: 0 6rem;
+}
+
+.hero .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/hero.png");
+    background-size: cover;
+    color: var(--white);
+}
+
+.hero .container a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.hero .container h1 {
+    font-size: 4rem;
+    font-family: "Playfair Display", sans-serif;
+    margin-bottom: 1rem;
+}
+
+.hero .container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .container .play-now {
+    position: absolute;
+    text-decoration: none;
+    color: var(--white);
+    bottom: 13rem;
+    background: var(--pink);
+    padding: 1rem 4rem;
+}
+
+.about .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--black-layer);
+    color: var(--white);
+}
+
+.about .about-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.about .container .about-picture{
+    width: 50%;
+}
+
+.about .container .about-content{
+    width: 50%;
+}
+
+.about .container h1 {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.about .container .about-content {
+    line-height: 2rem;
+}
