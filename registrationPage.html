@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/register.js"></script>
     <title>Doto 2</title>
 </head>
 
 <body>
     <section class="registration-logo">
         <nav>
-            <a class="logo" href="">Doto 2</a>
+            <a class="logo" href="index.html">Doto 2</a>
         </nav>
     </section>
 
@@ -25,35 +25,41 @@
                 </div>
                 <div class="registration-form">
                     <h3>Create Account</h3>
-                    <form action="">
+                    <form name="register" onsubmit="return validate()">
                         <div class="input">
-                            <input type="text" required>
+                            <input type="text" name="username" id="username" required>
+                            <span id="error-username"></span>
                             <label for="">Username</label>
                         </div>
                         <div class="input">
-                            <input type="email" required>
+                            <input type="text" name="email" id="email" required>
+                            <span id="error-email"></span>
                             <label for="">Email</label>
                         </div>
                         <div class="input">
-                            <input type="password" required>
+                            <input type="password" name="password" id="password" required>
+                            <span id="error-password"></span>
                             <label for="">Password</label>
                         </div>
                         <div class="input">
-                            <input type="password" required>
+                            <input type="password" name="confirm-password" id="confirm-password" required>
+                            <span id="error-repassword"></span>
                             <label for="">Confirm Password</label>
                         </div>
                         <div class="input">
-                            <input type="text" required>
+                            <input type="text" name="region" id="region" required>
+                            <span id="error-region"></span>
                             <label for="">Region</label>
                         </div>
                         <div class="input">
-                            <input type="date" required>
+                            <input type="date" name="dob" id="dob" required>
+                            <span id="error-dob"></span>
                             <label for="">Date of Birth</label>
                         </div>
-                        <input type="submit" value="Sign Up">
+                        <input type="submit" id="submit" value="Sign Up">
                     </form>
                     <div class="login-link">
-                        Already have an account? <a href="">Login</a>
+                        Already have an account? <a href="index.html">Login</a>
                     </div>
                 </div>
             </div>

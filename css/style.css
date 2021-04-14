@@ -28,7 +28,6 @@ nav {
     top: 0%;
     left: 0%;
     padding: 1.2rem 4rem;
-
 }
 
 nav .logo {
@@ -179,6 +178,18 @@ nav ul li a {
     position: relative;
     border-bottom: 2px solid var(--black);
     margin: 1.5rem 0;
+}
+
+.input.error input {
+    color: var(--pink);
+}
+
+.input.success input {
+    color: var(--black);
+}
+
+.input small {
+    color: var(--pink);
 }
 
 .input input {
