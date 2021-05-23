@@ -7,6 +7,7 @@
     --pink: #ff2e63;
     --blue: #2691d9;
     --black-layer: rgba(0, 0, 0, 0.3);
+    --black-background: #121212f5;
 }
 
 * {
@@ -28,6 +29,7 @@ nav {
     top: 0%;
     left: 0%;
     padding: 1.2rem 4rem;
+    z-index: 99;
 }
 
 nav .logo {
@@ -50,6 +52,10 @@ nav ul li a {
     margin: 0 15px;
     text-decoration: none;
     color: var(--white);
+}
+
+nav img {
+    height: 50px;
 }
 
 .container {
@@ -99,7 +105,7 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: var(--black);
+    background: var(--black-background);
     color: var(--white);
 }
 
@@ -150,7 +156,7 @@ nav ul li a {
 }
 
 .footer .footer-wrapper {
-    height: 20vh;
+    height: 35vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,7 +165,12 @@ nav ul li a {
 }
 
 .footer .footer-wrapper p {
+    color: var(--white);
     margin-top: 2rem;
     width: 38vw;
     text-align: center;
+}
+
+.footer-wrapper .picture-wrapper img {
+    height: 50px;
 }

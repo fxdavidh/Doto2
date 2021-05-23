@@ -7,7 +7,9 @@
     --pink: #ff2e63;
     --blue: #2691d9;
     --black-layer: rgba(0, 0, 0, 0.3);
+    --black-background: #121212f5;
 }
+
 
 * {
     margin: 0;
@@ -17,6 +19,7 @@
 
 body {
     font-family: "Roboto", serif;
+    background: var(--black-background);
 }
 
 .nav {
@@ -29,6 +32,7 @@ body {
     left: 0%;
     padding: 1.2rem 4rem;
     background-color: var(--black);
+    z-index: 99;
 }
 
 .nav .logo {
@@ -53,6 +57,10 @@ body {
     color: var(--white);
 }
 
+.nav img {
+    height: 50px;
+}
+
 .content {
     margin: 8rem 0rem 3rem;
     width: 100%;
@@ -70,6 +78,7 @@ body {
     font-size: 3rem;
     font-family: "Playfair Display", sans-serif;
     font-weight: 900;
+    color: var(--white);
 }
 
 .text-wrapper h2 {
@@ -77,6 +86,7 @@ body {
     width: 75%;
     font-weight: 400;
     margin-top: 1rem;
+    color: var(--white);
 }
 
 .content-wrapper {
@@ -146,16 +156,21 @@ body {
 }
 
 .footer .footer-wrapper {
-    height: 20vh;
+    height: 35vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: var(--black-layer);
+    background: var(--black);
 }
 
 .footer .footer-wrapper p {
+    color: var(--white);
     margin-top: 2rem;
     width: 38vw;
     text-align: center;
+}
+
+.footer-wrapper .picture-wrapper img {
+    height: 50px;
 }
