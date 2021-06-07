@@ -54,6 +54,14 @@ nav ul li a {
     color: var(--white);
 }
 
+nav ul li a:hover {
+    color: var(--pink);
+}
+
+#here {
+    color: var(--pink);
+}
+
 nav img {
     height: 50px;
 }

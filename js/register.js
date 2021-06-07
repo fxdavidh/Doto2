@@ -1,14 +1,24 @@
 const isRequired = (value) => (value == "" ? false : true);
+
 const isEmail = (value) => {
-  if (
-    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
-      value
-    )
-  )
-    return true;
+  var atSymbol = value.indexOf("@");
+  if (atSymbol < 1) return false;
+
+  var dot = value.indexOf(".");
+  if (dot <= atSymbol + 2) return false;
+
+  if (dot === value.length - 1) return false;
+
+  return true;
 };
+
 const isSecure = (value) => {
-  if (/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{5,}$/.test(value)) return true;
+  if (value.length < 5) return false;
+  if (value.search(/[a-z]/) < 0) return false;
+  if (value.search(/[A-Z]/) < 0) return false;
+  if (value.search(/[0-9]/) < 0) return false;
+
+  return true;
 };
 
 function validate() {
@@ -52,7 +62,8 @@ function validate() {
       "Your Password Cannot Be Empty";
     isPasswordValid = false;
   } else if (!isSecure(password)) {
-    document.getElementById("error-password").innerHTML = "Password must atleast has 5 characters that include 1 lowercase, 1 uppercase, 1 number";
+    document.getElementById("error-password").innerHTML =
+      "Password must atleast has 5 characters that include 1 lowercase, 1 uppercase, 1 number";
     isPasswordValid = false;
   } else {
     document.getElementById("error-password").innerHTML = "";
@@ -76,7 +87,7 @@ function validate() {
     document.getElementById("error-region").innerHTML =
       "Your Region Cannot Be Empty";
     isRegionValid = false;
-  } else if (region !== "Indonesia" ||region !== "Singapore") {
+  } else if (region !== "Indonesia" || region !== "Singapore") {
     document.getElementById("error-region").innerHTML =
       "Your Region Can Only Be Indonesia or Singapore";
     isRegionValid = false;
