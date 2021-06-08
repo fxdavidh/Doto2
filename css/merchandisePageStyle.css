@@ -69,6 +69,17 @@ body {
     height: 50px;
 }
 
+.content {
+    width: 100%;
+    display: block;
+}
+
+.content h1 {
+    padding-top: 10rem;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
 
 .footer .footer-wrapper {
     height: 35vh;

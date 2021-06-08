@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/indexStyle.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="../js/main.js"></script>
+    <script src="../js/index.js"></script>
     <title>Doto 2</title>
 </head>
 
@@ -38,17 +38,17 @@
             <h1>About Us</h1>
             <div class="about-wrapper">
                 <div class="about-picture">
-                    <iframe 
-                        src="https://www.youtube.com/embed/-cSFPIwMEq4"
-                        title="YouTube video player" 
-                        frameborder="0"
+                    <iframe src="https://www.youtube.com/embed/-cSFPIwMEq4" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                     </iframe>
                 </div>
                 <div class="about-content">
                     <p>
-                        Every day, millions of players worldwide enter the battle as one of over a hundred Dota Heroes in a 5v5 team clash. Dota is the deepest multi-player action RTS game ever made and there's always a new strategy or tactic to discover. It's completely free to play and always will be – start defending your ancient now.
+                        Every day, millions of players worldwide enter the battle as one of over a hundred Dota Heroes
+                        in a 5v5 team clash. Dota is the deepest multi-player action RTS game ever made and there's
+                        always a new strategy or tactic to discover. It's completely free to play and always will be –
+                        start defending your ancient now.
                     </p>
                 </div>
             </div>
@@ -59,10 +59,18 @@
         <div class="container">
             <h1>Game Overview</h1>
             <div class="overview-wrapper">
-                <img src="../assets/overview/base.jpg" class="active" alt="">
-                <img src="../assets/overview/map.png"  alt="">
-                <img src="../assets/overview/heroes.jpg"  alt="">
-                <img src="../assets/overview/game_start.jpg" alt="">
+                <div class="image-wrapper">
+                    <img src="../assets/overview/base.jpg" alt="">
+                    <img src="../assets/overview/map.png" alt="">
+                    <img src="../assets/overview/heroes.jpg" alt="">
+                    <img src="../assets/overview/game_start.jpg" alt="">
+                </div>
+            </div>
+            <div class="button-wrapper">
+                <input type="radio" id="img1" name="slider">
+                <input type="radio" id="img2" name="slider">
+                <input type="radio" id="img3" name="slider">
+                <input type="radio" id="img4" name="slider">
             </div>
         </div>
     </section>
@@ -73,9 +81,54 @@
                 <img src="../assets/logo.png" alt="">
             </div>
             <p>&copy; 2021 WeGames Corporation. Doto and any associated logos are
-            trademarks and/or registered trademarks of WeGames Corporation.</p>
+                trademarks and/or registered trademarks of WeGames Corporation.</p>
         </div>
     </section>
 </body>
+<script>
+    let img1 = $("#img1");
+    let img2 = $("#img2");
+    let img3 = $("#img3");
+    let img4 = $("#img4");
+    let wrapper = $(".image-wrapper");
+    let pos = 0;
+
+    wrapper.css({
+        left: pos + "%"
+    });
+
+    img1.on("click", function () {
+        pos = 0;
+
+        wrapper.css({
+            left: -pos + "%"
+        });
+    });
+
+    img2.on("click", function () {
+        pos = 100;
+
+        wrapper.css({
+            left: -pos + "%"
+        });
+    });
+
+    img3.on("click", function () {
+        pos = 200;
+
+        wrapper.css({
+            left: -pos + "%"
+        });
+    });
+
+    img4.on("click", function () {
+        pos = 300;
+
+        wrapper.css({
+            left: -pos + "%"
+        });
+    });
+
+</script>
 
 </html>
