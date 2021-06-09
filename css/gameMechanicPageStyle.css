@@ -82,70 +82,38 @@ body {
     text-align: center;
 }
 
+.content-wrapper-left,
 .content-wrapper-right {
-    background-image: url(../assets/hero.png);
-    background-position: right bottom;
-    position: relative;
-    margin: 5rem auto;
-    width: 1000px;
-    height: 400px;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    margin: 5rem 10rem;
 }
 
-.content-wrapper-left {
-    background-image: url(../assets/overview/creeps.jpg);
-    background-position: left bottom;
-    position: relative;
-    margin: 5rem auto;
-    width: 1000px;
-    height: 400px;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
+.content-wrapper-right {
+
 }
 
-.content-wrapper-right .text-wrapper{
-    position: absolute;
-    background: url(https://genshin.mihoyo.com/_nuxt/img/77bb3df.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 440px;
-    height: 390px;
-    top: -1.5rem;
-    left: -1rem;
-    padding: 1rem;
+.image-wrapper {
+    padding: 0 2rem;
+}
+
+.image-wrapper img {
+    height: 348.75px;
+    width: 620px;
+}
+
+.content-wrapper-left .text-wrapper h2,
+.content-wrapper-right .text-wrapper h2 {
     text-align: center;
-}
-
-.content-wrapper-left .text-wrapper{
-    position: absolute;
-    background: url(https://genshin.mihoyo.com/_nuxt/img/77bb3df.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 440px;
-    height: 390px;
-    top: -1.5rem;
-    right: -1rem;
-    padding: 1rem;
-    text-align: center;
-}
-
-.content-wrapper .text-wrapper h2 {
     font-weight: 600;
+    padding-bottom: 1rem;
 }
 
-.content-wrapper .text-wrapper h3 {
+.content-wrapper-left .text-wrapper h3,
+.content-wrapper-right .text-wrapper h3 {
+    text-align: center;
     font-weight: 400;
-}
-
-.content-wrapper .image-wrapper {
-    position: absolute;
-}
-
-.content-wrapper .image-wrapper img {
-    height: 280px;
 }
 
 .footer .footer-wrapper {

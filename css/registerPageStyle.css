@@ -30,28 +30,10 @@ nav {
     padding: 1.2rem 4rem;
 }
 
-nav .logo {
-    color: var(--white);
-    text-decoration: none;
-    font-size: 2rem;
-}
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.logo img {
+    height: 50px;
 }
-
-nav ul li {
-    list-style: none;
-}
-
-nav ul li a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: var(--white);
-}
-
 
 .container {
     padding: 0 6rem;

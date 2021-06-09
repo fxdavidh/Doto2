@@ -20,6 +20,7 @@
 body {
     font-family: "Roboto", serif;
     background: var(--black-background);
+    color: var(--white);
 }
 
 .nav {
@@ -70,8 +71,9 @@ body {
 }
 
 .content {
-    width: 100%;
+    width: 75%;
     display: block;
+    margin: auto 10rem;
 }
 
 .content h1 {
@@ -79,6 +81,35 @@ body {
     font-family: "Playfair Display", sans-serif;
     font-size: 3rem;
     text-align: center;
+}
+
+.content h2 {
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-wrapper {
+    padding: 1.5rem 1rem 1.5rem 0;
+}
+
+.image-wrapper img {
+    width: 200px;
+    height: 140px;
+}
+
+.text-wrapper {
+    padding-top: 1.5rem;
+}
+
+.text-wrapper h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .footer .footer-wrapper {
