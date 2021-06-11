@@ -207,3 +207,32 @@ input[type=date]:focus::-webkit-datetime-edit {
 .login-link a:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 800px) {
+    .logo img {
+        height: 40px;
+    }
+    
+    .registration-wrapper .registration-text h1 {
+        position: fixed;
+        bottom: 12rem;
+        left: 4rem;
+        font-size: 3rem;
+        width: 50%;
+    }
+
+    .registration-wrapper .registration-form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding: 2rem 3rem 0 3rem;
+        background-color: var(--white);
+        color: var(--black);
+    }
+}
