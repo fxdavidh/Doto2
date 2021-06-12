@@ -90,10 +90,6 @@ body {
     margin: 5rem 10rem;
 }
 
-.content-wrapper-right {
-
-}
-
 .image-wrapper {
     padding: 0 2rem;
 }
@@ -138,13 +134,56 @@ body {
 
 
 @media screen and (max-width: 800px) {
-    
     .nav img {
         height: 40px;
     }
+    
+    .content {
+        width: 100%;
+        display: block;
+    }
+
+    .content h1 {
+        padding-top: 10rem;
+        font-family: "Playfair Display", sans-serif;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .content-wrapper-left,
+    .content-wrapper-right {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin: 2rem 3rem;
+    }
+
+    .image-wrapper {
+        padding: 2rem 1rem;
+    }
+
+    .image-wrapper img {
+        height: 240px;
+        width: 360px;
+    }
+
+    .content-wrapper-left .text-wrapper h2,
+    .content-wrapper-right .text-wrapper h2 {
+        text-align: center;
+        font-weight: 600;
+        padding-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .content-wrapper-left .text-wrapper h3,
+    .content-wrapper-right .text-wrapper h3 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 1rem;
+    }
 
     .footer .footer-wrapper {
-        height: 50vh;
+        height: 40vh;
         display: flex;
         justify-content: center;
         align-items: center;
