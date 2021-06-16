@@ -88,14 +88,17 @@ nav img {
 }
 
 .hero .container h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: "Playfair Display", sans-serif;
     margin-bottom: 1rem;
+    font-weight: 400;
 }
 
 .hero .container h2 {
-    font-size: 2rem;
+    font-size: 3rem;
+    font-family: "Playfair Display", sans-serif;
     margin-bottom: 2rem;
+    font-weight: 600;
 }
 
 .hero .container .play-now {
@@ -237,9 +240,17 @@ input[type='radio']:checked:after {
     }
 
     .hero .container h1 {
-        font-size: 4rem;
+        font-size: 3rem;
         font-family: "Playfair Display", sans-serif;
         margin-bottom: 1rem;
+        font-weight: 400;
+    }
+    
+    .hero .container h2 {
+        font-size: 3rem;
+        font-family: "Playfair Display", sans-serif;
+        margin-bottom: 2rem;
+        font-weight: 600;
     }
 
     .hero .container h2 {
